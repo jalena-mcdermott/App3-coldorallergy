@@ -67,7 +67,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,20%,100%);
+    background-color: hsl(0,0%,100%);
 }
 
   .page:target {
@@ -99,7 +99,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     <div id="content" class="w3-container">
 	<p>Are your eyes watery or itchy?</p>    
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
  </div><!-- /content -->
 	
@@ -114,9 +114,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Are your eyes watery or itchy?</p>    
-	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
-         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">No</a> <!--changed the color and shape of buttons-->
+		<p>Do you have a fever?</p>    
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">No</a> 
+		
+	<!--changed the color and shape of buttons-->
  </div><!-- /content -->
 	
 <!--moving on to page 3-->	
@@ -128,9 +130,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Are your eyes watery or itchy?</p>    
-	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
-         	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">No</a>
+		<p>Do you have a sore throat?</p>    
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">No</a>
 	
 </div>	
 
