@@ -34,7 +34,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
+<!-- This is really confusing, but I also feel like a computer hacker at the same time which is pretty awesome -->
 <script>
         var allergy_count = 0;
         var cold_count = 0;
@@ -52,7 +52,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
   </script>
 
-
+<-- The following determines the style of the new -->
 
 <style>	
 .body {
@@ -89,7 +89,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+	
+<!-- next page begins and first question is asked-->
+	
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -100,9 +102,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
  </div><!-- /content -->
-
+	
+<!-- href=#2 means that once the button is clicked, page two shows up -->
+	
 </div>
-
+<!-- new page here, I think -->
+	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -110,11 +115,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your eyes watery or itchy?</p>    
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge"> Yes</a>
+         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">No</a> <!--changed the color and shape of buttons-->
  </div><!-- /content -->
-	
+<!--moving on to page 3-->	
 	</div>
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+		
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Are your eyes watery or itchy?</p>    
+	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge"> Yes</a>
+         	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">No</a>
+	
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
