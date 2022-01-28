@@ -92,7 +92,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- next page begins and first question is asked-->
 	
 <div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-peter-river">
 		<h1>Question 1</h1>
 	</div>
 	
@@ -108,14 +108,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- new page here, I think -->
 	
 <div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
+	<div class="w3-container w3-flat-peter-river">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>    
-		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
-         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">No</a> 
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> 
 		
 	<!--changed the color and shape of buttons-->
  </div><!-- /content -->
@@ -123,21 +123,44 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--moving on to page 3-->	
 	</div>
 <div class="page" id="three">
-	<div class="w3-container w3-flat-carrot">
+	<div class="w3-container w3-flat-peter-river">
 		<h1>Question 3</h1>
 		
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>    
-		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-teal-round-xxlarge">Yes</a>
-         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-teal-round-xxlarge">No</a>
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		
+<!-- last question -->
+	</div>
+</div class="page" id="four">
+	<div class="w3-container w3-flat-peter-river">
+		<h1>Question 4</h1>
+		
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Are your symptoms seasonal?</p>
+		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
 	
 </div>	
+<!-- results -->
+	</div>
+</div class="page" id="five">
+	 <div class="w3-container w3-flat-peter-river">
+		 <h1>Results</h1>
+		 
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
+		 <div/>
+<!-- below is the equation used to figure the results-->
+ var resultText = document.getElementById("resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+");
+
+<footer class="w3-bottom w3-container w3-flat-peter-river">
 	<p>DIY!</p>
 </footer>
-
 </body>
 </html>
