@@ -90,22 +90,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
 <!-- next page begins and first question is asked-->
-	
+	<!-- id identifies what the page is called and how to reference it from there on-->
 <div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-orange">
+	<div id="header" class="w3-container w3-flat-orange"> <!-- shape and color of the header-->
 		<h1>Question 1</h1>
 	</div>
 	
     <div id="content" class="w3-container">
 	<p>Are your eyes watery or itchy?</p>    
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-blue w3-round-xxlarge">Yes</a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-blue w3-round-xxlarge">Yes</a> <!-- Button information-->
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-blue w3-round-xxlarge">No</a>
- </div><!-- /content -->
+ </div><!-- AllergyAdd and coldAdd place values in each category for final calculations -->
 	
 <!-- href=#2 means that once the button is clicked, page two shows up -->
 	
 </div>
-<!-- new page here, I think -->
+<!-- new page here -->
 	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
@@ -131,7 +131,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>    
 		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-blue w3-round-xxlarge">Yes</a>
-         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-blue w3-round-xxlarge">Yes</a>
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-blue w3-round-xxlarge">No</a>
 		
 <!-- last question -->
 	</div>
@@ -153,7 +153,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	 <div class="w3-container w3-flat-wisteria">
 		 <h1>Results</h1> 
 		 
-		 </div>
+	 </div>
 	
 	<p id="results"></p>
 	
