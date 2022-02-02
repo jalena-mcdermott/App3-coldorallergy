@@ -38,7 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-
+	var resultText = document.getElementById("results");
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -49,9 +49,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function results() {
-		var resultText = document.getElementById("results");
-	}
   </script>
 
 <-- The following determines the style of the new -->
@@ -160,9 +157,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p id="results">
 	</p>
 
-	<script> 
-		var resultText = document.getElementById("results");
-	</script>
 <script>
 resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
 </script>
